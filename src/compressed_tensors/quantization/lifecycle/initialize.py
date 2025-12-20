@@ -148,8 +148,8 @@ def is_attention_module(module: Module):
         hasattr(module, "k_proj")
         or hasattr(module, "v_proj")
         or hasattr(module, "qkv_proj")
+        or hasattr(module, "kv_b_proj")
     )
-
 
 def initialize_qparams(
     module: Module,
